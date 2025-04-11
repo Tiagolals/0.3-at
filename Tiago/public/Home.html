@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra Lateral</title>
+    <link rel="stylesheet" href="CSS/Home.css">
+
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="logo">
+            <h2>Logo</h2>
+        </div>
+
+        <!-- Botão para minimizar/expadir -->
+        <button class="big-small-bar" type="button">
+            <span class="icon">≡</span>
+        </button>
+
+        <ul class="menu">
+            <li><a href="#home"><span class="icon">🏠</span> Home</a></li>
+            <li><a href="#sobre"><span class="icon">ℹ️</span> About Us</a></li>
+            <li><a href="#servicos"><span class="icon">🔧</span> Services</a></li>
+            <li><a href="#contato"><span class="icon">📞</span> Contact</a></li>
+        </ul>
+
+        <!-- Botão Premium -->
+        <button class="premium-btn" type="button">
+            <span class="text">Premium</span>
+        </button>
+    </nav>
+
+    <main class="content">
+        <h1>Nexora</h1>
+        <input type="text">
+        <p>
+            "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+            "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
+        </p>
+
+        <div id="blocos">
+            <div class="bloco" id="bloco1">
+                <div class="userphoto"><img src="" alt="User Photo"></div>
+                <h3>User Name</h3>
+                <p>
+                    🎨 Designer Gráfico com foco em soluções criativas e impactantes. Especialista em identidades visuais, mídias sociais, peças publicitárias e design digital.
+                    Transformo ideias em visuais que comunicam e conectam. Vamos criar algo incrível juntos?
+                </p>
+            </div>
+            <div class="bloco" id="bloco2">
+                <h3>User Name</h3>
+                <p>
+                    🎨 Designer Gráfico com foco em soluções criativas e impactantes. Especialista em identidades visuais, mídias sociais, peças publicitárias e design digital.
+                    Transformo ideias em visuais que comunicam e conectam. Vamos criar algo incrível juntos?
+                </p>
+            </div>
+            <div class="bloco" id="bloco3">
+                <h3>User Name</h3>
+                <p>
+                    🎨 Designer Gráfico com foco em soluções criativas e impactantes. Especialista em identidades visuais, mídias sociais, peças publicitárias e design digital.
+                    Transformo ideias em visuais que comunicam e conectam. Vamos criar algo incrível juntos?
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<script>
+  // Seleciona a barra lateral e o botão de minimizar/expandid
+const sidebar = document.querySelector('.sidebar');
+const toggleButton = document.querySelector('.big-small-bar');
+
+// Alterna entre os estados de minimizado e expandido
+toggleButton.addEventListener('click', () => {
+    sidebar.classList.toggle('minimized');
+});
+</script>

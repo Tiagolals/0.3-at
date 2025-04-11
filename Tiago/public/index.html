@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page Nexora</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link href="CSS/style.css" rel="stylesheet" type="text/css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="icon"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAB0klEQVRYhe2VO0tcURSFP3zEsbXX1JE0g476A7SwCQSCYqsDgyCK8YFaKMI0WiSNf8DaX2AR0ELR+ABBGLBQRLDRgIJPFK/FWYfZHEVmkptCuKtb3zlnr8Nln30hUaJE70yzwEHA5oAHIAJOgZ7/FT6lkG3D9sUKwCJwJf8j7vAJFd4wbE/se7B3GfgcZ/j4K+E7YqPydXEGWo0paNOwTbFJ+Vr5leBspdb+WiOvhK+JTcungHuxFrFPwKFYBFwCHeWGd+vwb8NWxfLyNcCdWFqszQTncY17Kf+lnAtEwInxv8Tm5D8At2JNYq3yV0BVUO8ceCo1/KMK9cnn5H/KVwM3Ys1iGflrrQN0mpqDWq8v5QL12pwzrMuEX2s9I9Ysf4P7MgAzYtngAg2lXADgETgLWBXFQdMq1iR/a8L9wFo2Z/+IlaxOih08hWso31xt2pOWv8M1JLi5EOF6xqsg9rWcCwC0Axcm+Aj3xMA9uQj3BFNiQ2KrpoYf1QPlhlulgIqAraiwHzT98utmjx/Vg/8S/pb8+M3ycmbsig3FGdgILAWsV0G7hm2JDccZDjCvwmfAAsV/wp7Z439SI3GHe30Djim++3ywXsC9mkSJEr0fPQMYZJApzxnpNAAAAABJRU5ErkJggg=="
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+  
+<!-- Bolinha que segue o cursor -->
+<div id="ball"></div>
+    <!--CABEÇALHO------------------------->
+    <header class="header hidden-Cabeçalho">
+      <div class="logo">
+        <img
+          class="Logo"
+          src="https://img.freepik.com/vetores-gratis/design-de-logotipo-de-icone-criativo-da-letra-g_474888-3738.jpg"
+        />
+      </div>
+      <p class="meio-texto">Boost your projects!</p>
+      <div class="direito-section">
+        <button class="signup-botão">Sign Up Now</button>
+      </div>
+    </header>
+
+    <main>
+      <!--PAGINA 1 (APRESENTAÇÃO)------------------------->
+      <section class="pag1">
+        <h1 class="H1slogan">Create Your New Style Now</h1>
+        <p class="Pdescrição">Nexora Designs</p>
+        <button class="BTNcomecar">Boost your projects!</button>
+
+        <div class="bolinhas">
+          <div class="bolinha"></div>
+          <div class="bolinha"></div>
+          <div class="bolinha"></div>
+          <div class="bolinha"></div>
+        </div>
+
+        <div class="blur blur1"></div>
+        <div class="blur blur2"></div>
+        <div class="blur blur3"></div>
+      </section>
+      <!--PAGINA 2 (CADASTRO)------------------------->
+      <section class="pag2">
+        <!--SECÃO DE CADASTRO ------------------------------->
+        <div class="Meio">
+          <form class="form" id="registerForm">
+            <p class="title">Register</p>
+            <a><p class="return">Back</p></a>
+            <div class="flex">
+              <label>
+                <input
+                  class="input"
+                  type="text"
+                  placeholder="Firstname"
+                  required
+                />
+                <span>Firstname</span>
+              </label>
+              <label>
+                <input
+                  class="input"
+                  type="text"
+                  placeholder="Lastname"
+                  required
+                />
+                <span>Lastname</span>
+              </label>
+            </div>
+            <label>
+              <input class="input" type="email" placeholder="Email" required />
+              <span>Email</span>
+            </label>
+            <label>
+              <input
+                class="input"
+                type="password"
+                placeholder="Password"
+                required
+              />
+              <span>Password</span>
+            </label>
+            <label>
+              <input
+                class="input"
+                type="password"
+                placeholder="Confirm_password"
+                required
+              />
+              <span>Confirm password</span>
+            </label>
+            <button type="submit" class="submit">Submit</button>
+            <p class="signin">
+              Already have an account? <a class="btn2">SignIn</a>
+            </p>
+          </form>
+        </div>
+        <div class="Meio2">
+          <form class="form2" id="loginForm">
+            <p class="title2">Login</p>
+            <a><p class="return2">Back</p></a>
+            <div class="flex2">
+              <label>
+                <input
+                  class="input2"
+                  type="text"
+                  placeholder="Firstname"
+                  required
+                />
+                <span>Firstname</span>
+              </label>
+            </div>
+            <label>
+              <input class="input2" type="email" placeholder="Email" required />
+              <span>Email</span>
+            </label>
+            <label>
+              <input
+                class="input2"
+                type="password"
+                placeholder="Password"
+                required
+              />
+              <span>Password</span>
+            </label>
+            <button type="submit" class="submit2">Submit</button>
+            <p class="signin2">
+              Don't have an account? <a class="btn3">SignUp</a>
+            </p>
+          </form>
+        </div>
+        <!--Parte esquerda ---------------------------------------->
+        <div class="esquerda">
+          <h1 class="H1pag2">Nexora Startup</h1>
+          <p class="P1pag2">
+            Design is the process of creating visual and functional elements to
+            communicate messages effectively. It involves understanding user
+            needs and applying creativity to solve problems. From typography to
+            color theory, every choice in design has a purpose, influencing how
+            users interact with a product.
+          </p>
+          <button class="GST">Get started</button>
+          <div class="cards-container">
+            <div class="card">
+              <h2>Bringing Ideas to Life</h2>
+              <p>
+                Our designers combine creativity and strategy to craft impactful
+                and effective visuals.
+              </p>
+            </div>
+            <div class="card">
+              <h2>Tailored Design Services</h2>
+              <p>
+                From branding to UI design, we create unique solutions that make
+                a lasting impression.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="imagens">
+          <img
+            alt="A beautiful sunset view"
+            src="https://i.pinimg.com/736x/9e/dc/ee/9edcee6efb786d4483d050e962a0ceb7.jpg"
+          />
+          <img
+            alt="Scenic mountain landscape"
+            src="https://i.pinimg.com/736x/09/10/0d/09100d3aa42a1fe1899173301414cffa.jpg"
+          />
+          <img
+            alt="Vibrant city skyline at night"
+            src="https://i.pinimg.com/736x/b6/b0/a7/b6b0a7a74321d37b7e03169a84a2e303.jpg"
+          />
+          <img
+            alt="A peaceful beach at sunset"
+            src="https://i.pinimg.com/736x/99/3d/54/993d548560c26a9c0ae1907e39319581.jpg"
+          />
+        </div>
+        <!--Parte direita ---------------------------------------->
+        <div class="direita">
+          <img class="banner" src="IMG/image.png" alt="Banner da startup" />
+          <!--Mensagens ---------------------------------------->
+          <div class="mensagens">
+            <!--Mnsg 1-->
+            <p>Optional Questions</p>
+            <h1>How did you hear about Nexora?</h1>
+            <label for="mensagem" class="mensagem">
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                rows="5"
+                cols="33"
+                placeholder="Write your answer here..."
+              ></textarea>
+            </label>
+            <!--Mnsg 2-->
+            <h1>Are you experienced in the design field?</h1>
+            <label for="mensagem" class="mensagem">
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                rows="5"
+                cols="33"
+                placeholder="Write your answer here..."
+              ></textarea>
+            </label>
+            <!--Mnsg 3-->
+            <h1>Are you enjoying the site?</h1>
+            <label for="mensagem" class="mensagem">
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                rows="5"
+                cols="33"
+                placeholder="Write your answer here..."
+              ></textarea>
+            </label>
+          </div>
+          <button class="enviar">Send</button>
+        </div>
+      </section>
+      <!--PAGINA 3 (VÍDEO)------------------------->
+
+
+        <section class="pag3">
+          <div class="cont">
+            <!-- Parte Esquerda -->
+            <div class="esquerdaPag3">
+              <h1 class="titulo">Título Grande</h1>
+            </div>
+            <!-- Parte Direita -->
+            <div class="direitaPag3">
+              <video width="640" height="360" controls>
+                <source src="meu-video.mp4" type="video/mp4">
+                Seu navegador não suporta vídeos em HTML5.
+              </video>
+            </div>
+          </div>
+        
+      
+      </section>
+      <section class="pag4"></section>
+      <section class="pag5"></section>
+    </main>
+
+    <footer></footer>
+
+    <script>
+      // JS PARA O HEADER SUMIR NA PAGINA 1
+      //
+      const header = document.querySelector(".header");
+      const pag2Section = document.querySelector(".pag2");
+
+      function checkScrollPosition() {
+        const pag2Top = pag2Section.offsetTop;
+        const scrollPosition = window.scrollY;
+
+        if (scrollPosition >= pag2Top) {
+          header.classList.add("visible-Cabeçalho");
+          header.classList.remove("hidden-Cabeçalho");
+        } else {
+          header.classList.remove("visible-Cabeçalho");
+          header.classList.add("hidden-Cabeçalho");
+        }
+      }
+
+      window.addEventListener("scroll", checkScrollPosition);
+      // JS PARA A COLORAÇÃO NO GERAL DA PRIMEIRA PÁGINA
+      //
+      const bolinhas = document.querySelectorAll(".bolinha");
+      let index = 0;
+
+      function alternarBolinhas() {
+        bolinhas.forEach((b, i) => {
+          b.classList.remove(`ativa${i + 1}`);
+        });
+
+        bolinhas[index].classList.add(`ativa${index + 1}`);
+        document.body.setAttribute("data-cor", index + 1);
+
+        index = (index + 1) % bolinhas.length;
+      }
+      setInterval(alternarBolinhas, 3000);
+      //JS para a area de CADSTRO (o formulario no caso)
+      //
+      $(".Meio").hide();
+      $(".Meio2").hide();
+
+      $(".GST").click(function () {
+        $(".Meio").fadeIn();
+      });
+
+      $(".return").click(function () {
+        $(".Meio").fadeOut();
+      });
+
+      $(".btn2").click(function () {
+        $(".Meio").fadeOut();
+        $(".Meio2").fadeIn();
+      });
+
+      $(".return2").click(function () {
+        $(".Meio2").fadeOut();
+      });
+
+      $(".btn3").click(function () {
+        $(".Meio").fadeIn();
+        $(".Meio2").fadeOut();
+      });
+
+      $(".GST").click(function () {
+        $(".Meio2").fadeOut();
+      });
+
+      //JS para CADSTRO e Login
+      //
+      // Função para fazer login
+      //
+      function loginUser(event) {
+        event.preventDefault();
+
+        const email = document
+          .querySelector('#loginForm input[placeholder="Email"]')
+          .value.trim();
+        const password = document
+          .querySelector('#loginForm input[placeholder="Password"]')
+          .value.trim();
+
+        const userData = localStorage.getItem(email);
+
+        if (userData) {
+          const user = JSON.parse(userData);
+
+          if (user.password === password) {
+            alert("Login realizado com sucesso!");
+            localStorage.setItem("currentUser ", JSON.stringify(user)); // Armazena o usuário atual
+            window.location.href = "Home.html"; // Redireciona para Home.html
+          } else {
+            alert("Senha incorreta!");
+          }
+        } else {
+          alert("Usuário não encontrado!");
+        }
+      }
+
+      document
+        .querySelector("#loginForm")
+        .addEventListener("submit", loginUser);
+
+      // Função para fazer Cadastro
+      //
+      function registerUser(event) {
+        event.preventDefault();
+
+        const firstname = document
+          .querySelector('#registerForm input[placeholder="Firstname"]')
+          .value.trim();
+        const email = document
+          .querySelector('#registerForm input[placeholder="Email"]')
+          .value.trim();
+        const password = document
+          .querySelector('#registerForm input[placeholder="Password"]')
+          .value.trim();
+        const confirmPassword = document
+          .querySelector('#registerForm input[placeholder="Confirm_password"]')
+          .value.trim();
+
+        if (!email.includes("@") || !email.includes(".")) {
+          alert("Por favor, insira um email válido!");
+          return;
+        }
+
+        if (password !== confirmPassword) {
+          alert("As senhas não coincidem!");
+          return;
+        }
+
+        const user = {
+          firstname,
+          email,
+          password,
+        };
+
+        localStorage.setItem(email, JSON.stringify(user)); // Salvar pelo EMAIL
+        alert("Cadastro realizado com sucesso!");
+        localStorage.setItem("currentUser ", JSON.stringify(user)); // Armazena o usuário atual
+        window.location.href = "Home.html"; // Redireciona para Home.html
+      }
+
+      document
+        .querySelector("#registerForm")
+        .addEventListener("submit", registerUser);
+//BOLINHA QUE SEGUE O MOUSE ------------------------------------------------
+//
+  // Selecionar a bolinha
+const ball = document.getElementById('ball');
+
+// Variáveis para interpolação
+let targetX = 0;
+let targetY = 0;
+let currentX = 0;
+let currentY = 0;
+
+// Função para atualizar a posição da bolinha
+function updateBallPosition(event) {
+  const { clientX, clientY } = event;
+
+  // Define a posição alvo (onde o cursor está)
+  targetX = clientX;
+  targetY = clientY;
+}
+
+// Função para animar a bolinha com interpolação
+function animateBall() {
+  // Interpolação para suavizar o movimento
+  currentX += (targetX - currentX) * 0.1; // Ajuste o valor (0.1) para controlar a suavidade
+  currentY += (targetY - currentY) * 0.1; // Ajuste o valor (0.1) para controlar a suavidade
+
+  // Atualiza a posição da bolinha
+  ball.style.left = `${currentX}px`;
+  ball.style.top = `${currentY}px`;
+
+  // Chama a função novamente para criar um loop de animação
+  requestAnimationFrame(animateBall);
+}
+
+// Adicionar evento de movimento do mouse
+document.addEventListener('mousemove', updateBallPosition);
+
+// Iniciar a animação
+animateBall();
+
+// Função para verificar se a bolinha está sobre um elemento interativo
+function checkIntersection() {
+  const interactiveElements = document.querySelectorAll('.interactive');
+  const ballRect = ball.getBoundingClientRect();
+
+  // Remover a classe "enlarged" de todos os elementos
+  ball.classList.remove('enlarged');
+
+  // Verificar interseção com cada elemento interativo
+  interactiveElements.forEach((element) => {
+    const elementRect = element.getBoundingClientRect();
+
+    if (
+      ballRect.top >= elementRect.top &&
+      ballRect.bottom <= elementRect.bottom &&
+      ballRect.left >= elementRect.left &&
+      ballRect.right <= elementRect.right
+    ) {
+      // A bolinha está sobre o elemento interativo
+      ball.classList.add('enlarged');
+    }
+  });
+}
+
+// Adicionar evento de movimento do mouse para verificar interseções
+document.addEventListener('mousemove', checkIntersection);
+
+// Marcar os elementos interativos com a classe "interactive"
+document.querySelector('.GST').classList.add('interactive'); // Botão "Get started"
+document.querySelectorAll('.mensagem').forEach((element) => {
+  element.classList.add('interactive'); // Campos de mensagem
+});
+document.querySelector('.enviar').classList.add('interactive'); // Botão "Send"
+    </script>
+  </body>
+</html>
