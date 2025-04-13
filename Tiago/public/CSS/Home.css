@@ -37,11 +37,13 @@ body {
     margin-bottom: 20px;
     overflow: hidden; /* Oculta texto quando minimizado */
     white-space: nowrap;
-    transition: opacity 0.3s ease;
+    opacity: 1; /* Opacidade padrão */
+    transition: opacity 0.3s ease; /* Transição suave */
 }
 
 .sidebar.minimized .logo h2 {
-    display: none; /* Remove o texto do logo quando minimizado */
+    opacity: 0; /* Texto desaparece gradualmente */
+    pointer-events: none; /* Desativa interações enquanto está invisível */
 }
 
 .sidebar .menu li {
@@ -59,7 +61,7 @@ body {
 }
 
 .sidebar.minimized .menu li a .text {
-    display: none; /* Oculta o texto do menu quando minimizado */
+    display: none; /* Remove o texto dos itens da lista */
 }
 
 .sidebar .menu li a:hover {
@@ -81,6 +83,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    align-self: center; /* Alinha o botão na parte inferior da barra lateral */
 }
 
 .sidebar.minimized .premium-btn {
@@ -96,7 +99,7 @@ body {
     color: #fff;
     font-size: 24px;
     cursor: pointer;
-    align-self: flex-end;
+    position: absolute;
     margin-bottom: 20px;
 }
 
@@ -108,6 +111,69 @@ body {
     transition: margin-left 0.3s ease; /* Animação suave para ajuste de margem */
 }
 
+.content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.content input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Estilo dos blocos */
+#blocos {
+    display: flex;
+    gap: 20px; /* Espaçamento entre os blocos */
+    margin-top: 20px;
+}
+
+.bloco {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1; /* Cada bloco ocupa espaço igual */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bloco:hover {
+    transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.userphoto img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Formato circular para a foto do usuário */
+    object-fit: cover; /* Ajusta a imagem dentro do círculo */
+    margin-bottom: 15px;
+}
+
+.bloco h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.bloco p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+}
 .sidebar.minimized + .content {
     margin-left: 100px; /* Ajusta a margem quando a barra lateral está minimizada */
 }

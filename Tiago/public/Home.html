@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barra Lateral</title>
+    <title>Home Page</title>
     <link rel="stylesheet" href="CSS/Home.css">
+    <script src="JS/Home.js" defer></script>
+
 
 </head>
 <body>
@@ -49,6 +51,7 @@
                 </p>
             </div>
             <div class="bloco" id="bloco2">
+                <div class="userphoto"><img src="" alt="User Photo"></div>
                 <h3>User Name</h3>
                 <p>
                     🎨 Designer Gráfico com foco em soluções criativas e impactantes. Especialista em identidades visuais, mídias sociais, peças publicitárias e design digital.
@@ -56,6 +59,7 @@
                 </p>
             </div>
             <div class="bloco" id="bloco3">
+                <div class="userphoto"><img src="" alt="User Photo"></div>
                 <h3>User Name</h3>
                 <p>
                     🎨 Designer Gráfico com foco em soluções criativas e impactantes. Especialista em identidades visuais, mídias sociais, peças publicitárias e design digital.
@@ -68,13 +72,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-<script>
-  // Seleciona a barra lateral e o botão de minimizar/expandid
-const sidebar = document.querySelector('.sidebar');
-const toggleButton = document.querySelector('.big-small-bar');
-
-// Alterna entre os estados de minimizado e expandido
-toggleButton.addEventListener('click', () => {
-    sidebar.classList.toggle('minimized');
-});
-</script>
