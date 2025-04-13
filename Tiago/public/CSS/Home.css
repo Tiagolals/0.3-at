@@ -108,6 +108,71 @@ body {
     transition: margin-left 0.3s ease; /* Animação suave para ajuste de margem */
 }
 
+.content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.content input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Estilo dos blocos */
+#blocos {
+    display: flex;
+    gap: 20px; /* Espaçamento entre os blocos */
+    margin-top: 20px;
+}
+
+.bloco {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1; /* Cada bloco ocupa espaço igual */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bloco:hover {
+    transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.userphoto img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Formato circular para a foto do usuário */
+    object-fit: cover; /* Ajusta a imagem dentro do círculo */
+    margin-bottom: 15px;
+}
+
+.bloco h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.bloco p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+}
+
 .sidebar.minimized + .content {
     margin-left: 100px; /* Ajusta a margem quando a barra lateral está minimizada */
 }
