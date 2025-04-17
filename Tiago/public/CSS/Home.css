@@ -29,7 +29,7 @@ body {
 }
 
 .sidebar.minimized {
-    width: 80px; /* Largura quando minimizada */
+    width: 6vw; /* Largura quando minimizada */
 }
 
 .sidebar .logo {
@@ -46,8 +46,13 @@ body {
     pointer-events: none; /* Desativa interações enquanto está invisível */
 }
 
+.sidebar .menu{
+    position: absolute;
+    top: 20vh; /* Distância do topo da barra lateral */
+}
+
 .sidebar .menu li {
-    margin-bottom: 15px;
+    margin-bottom: 5vh;
 }
 
 .sidebar .menu li a {
@@ -58,10 +63,7 @@ body {
     align-items: center;
     gap: 10px; /* Espaçamento entre ícone e texto */
     transition: opacity 0.3s ease;
-}
 
-.sidebar.minimized .menu li a .text {
-    display: none; /* Remove o texto dos itens da lista */
 }
 
 .sidebar .menu li a:hover {
@@ -84,11 +86,14 @@ body {
     align-items: center;
     justify-content: center;
     align-self: center; /* Alinha o botão na parte inferior da barra lateral */
+    position: absolute;
+    bottom: 10vh; /* Distância do fundo da barra lateral */
+    top: 50vh; /* Distância do topo da barra lateral */
 }
 
 .sidebar.minimized .premium-btn {
-    width: 50px; /* Largura quando minimizado */
-    height: 100px; /* Altura quando minimizado */
+    width: 3.5vw; /* Largura quando minimizado */
+    height: 14vh; /* Altura quando minimizado */
     font-size: 14px;
 }
 
@@ -100,7 +105,7 @@ body {
     font-size: 24px;
     cursor: pointer;
     position: absolute;
-    margin-bottom: 20px;
+    margin: 1%;
 }
 
 /* Estilo do conteúdo principal */
@@ -131,6 +136,7 @@ body {
     font-size: 18px;
     line-height: 1.6;
     color: #555;
+    text-align: center; /* Centraliza o texto */
 }
 
 /* Estilo dos blocos */

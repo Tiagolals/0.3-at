@@ -6,3 +6,7 @@
   toggleButton.addEventListener('click', () => {
       sidebar.classList.toggle('minimized');
   });
+
+  $(".big-small-bar").click(function () {
+    $(".Pmenu").toggle();
+  });
